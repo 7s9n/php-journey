@@ -54,4 +54,8 @@
   echo "ceil(2.6): " . ceil(2.6) . '<br>';
   echo "fmod(2 , 2): " . fmod(2 , 2) . "<br>";
   echo "fmod(1 , 2): " . fmod(1 , 2) . "<br>";
+  echo "log10(3): " . log10(3) . "<br>";
+  echo "log(3): " . log(3) . "<br>";
+  echo "rand(1 , 10): " . rand(1 , 10) . "<br>";
+  echo "rand(): " . rand() . "<br>";
  ?>
