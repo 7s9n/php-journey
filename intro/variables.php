@@ -53,4 +53,15 @@
   echo PI . '<br>';
 
   //Useing PHP built-in constants
+  //PHP has the following predefined constants for integers.
+  print "INT_MAX is: " .PHP_INT_MAX ."<br>"; #The largest integer supported.
+  print "INT_MIN is: " .PHP_INT_MIN ."<br>"; #The smallest integer supported.
+  print "INT_SIZE is: " .PHP_INT_SIZE ."<br>"; #The size of an integer in bytes.
+
+  //PHP has the following predefined constants for floats (from PHP 7.2):
+  print "FLOAT_MAX is: " .PHP_FLOAT_MAX ."<br>"; #The largest representable floating point number.
+  print "FLOAT_MIN is: " .PHP_FLOAT_MIN ."<br>"; #The smallest representable positive floating point number.
+  print "-FLOAT_MAX is: ".-PHP_FLOAT_MAX ."<br>"; #The smallest representable negative floating point number.
+  print "FLOAT_DIG is: ".PHP_FLOAT_DIG  ."<br>"; #The number of decimal digits that can be rounded into a float and back without precision loss.
+  print "FLOAT_EPSILON is: ".PHP_FLOAT_EPSILON  ."<br>"; #The smallest representable positive number x, so that x + 1.0 != 1.0.
  ?>
