@@ -120,7 +120,18 @@
   echo '</pre>';
 
   //Check if array has specific key
+  $search_array = array('first' => 1, 'second' => 4);
+  if (array_key_exists('first', $search_array)) {
+      echo "The 'first' element is in the array";
+  }
+  //isset() does not return true for array keys that correspond to a null value, while array_key_exists() does.
+  $search_array = array('first' => null, 'second' => 4);
 
+  // returns false
+  isset($search_array['first']);
+
+  // returns true
+  array_key_exists('first', $search_array);
   //Print the key of the array
   echo '<pre>';
   var_dump(array_keys($person));
@@ -132,8 +143,10 @@
   echo '</pre>';
 
   //Sort associative array by key / value
-  ksort($person); // sort by key
-  //asort($person); // sort by value
+  ksort($person); // sort associative arrays in ascending order, according to the key
+  //krsort($person) //sort associative arrays in descending order, according to the key
+  //asort($person); //sort associative arrays in ascending order, according to the value
+  //arsort($person); // sort associative arrays in descending order, according to the value
   echo '<pre>';
   var_dump($person);
   echo '</pre>';
@@ -158,4 +171,5 @@
   echo '<pre>';
   var_dump($todos);
   echo '</pre>';
+  //https://www.php.net/manual/en/ref.array.php
  ?>
