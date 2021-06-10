@@ -1,4 +1,14 @@
 <?php
+#The PHP logical operators are used to combine conditional statements.
+/**
+operator  Example       Result
+and      $x and $y      True if both $x and $y are true
+or       $x or $y       True if either $x or $y is true
+xor      $x xor $y      True if either $x or $y is true, but not both
+&&       $x && &y       True if both $x and $y are true
+||	     $x || $y       True if either $x or $y is true
+!          !$x          True if $x is not true
+*/
   $age = 20;
   $salary = 300000;
 
@@ -60,19 +70,17 @@
       default:
           echo 'Unknown role<br>';
   }
-  #The PHP logical operators are used to combine conditional statements.
-  /**
-  operator  Example       Result
-  and      $x and $y      True if both $x and $y are true
-  or       $x or $y       True if either $x or $y is true
-  xor      $x xor $y      True if either $x or $y is true, but not both
-  &&       $x && &y       True if both $x and $y are true
-  ||	     $x || $y       True if either $x or $y is true
-  !          !$x          True if $x is not true
-  */
+
   $x = 100;
   $y = 200;
-
+  if ($x <= 100 && $y === 0) {
+    // code...
+  }elseif ($x >= 100 && $y <= 200) {
+    // code...
+    echo "Yes" . '<br>';
+  }else {
+    // code...
+  } // end else
   if ($x === 100 and $y === 200) {
     echo "Yes , x is 100 and y is 200 <br>";
   }
