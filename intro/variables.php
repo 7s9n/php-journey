@@ -48,6 +48,15 @@
   isset($name); // true
   isset($greetings); // false
 
+  /**
+  To create a constant, use the define() function.
+  Syntax
+  define(name, value, case-insensitive)
+  parameters:
+  name: Specifies the name of the constant
+  value: Specifies the value of the constant.
+  case-insensitive: Specifies whether the constant name should be case-insensitive. Default is false.
+  */
   //Constants
   define('PI' , 3.14);
   echo PI . '<br>';
